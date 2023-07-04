@@ -16,23 +16,129 @@
     font-weight: normal;
     font-style: normal;
 }
-.grid-container-alea-affiches {
+   /*grille index*/ .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-top: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-flow: row column;
   }
   
   @media (max-width: 768px) {
-    .grid-container-alea-affiches {
+    .grid {
       grid-template-columns: 1fr;
     }
   }
   
-  .grid-item {
+  .item {
+    background-color: #f2f2f2;
+    padding: 10px;
     text-align: center;
   }
+  /*grille mca affiches*/
+  .grid-container-mca {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container-mca {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .column {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
 
+/*grille programme mca*/
+.grid-container-programme-mca {
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+.grid-container-programme-mca {
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.grid-item {
+text-align: center;
+}
+
+/*grille mémoire*/
+.grid-container-memoire {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.grid-container-memoire {
+  grid-template-columns: 1fr;
+}
+}
+
+.grid-item {
+text-align: center;
+}
+
+/*grilles storie di merletti*/
+.grid-container-burano {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.grid-container-burano {
+  grid-template-columns: 1fr;
+}
+}
+
+.grid-item {
+text-align: center;
+}
+
+.grid-container-burano2 {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.grid-container-burano2 {
+  grid-template-columns: 1fr;
+}
+}
+
+.grid-item {
+text-align: center;
+}
+
+/*grille alea affiches*/
+.grid-container-alea-affiches {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.grid-container-alea-affiches {
+  grid-template-columns: 1fr;
+}
+}
+
+.grid-item {
+text-align: center;
+}
 
 /* PARAMÈTRES GÉNÉRAUX */
 img {
