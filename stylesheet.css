@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'fengardo-neue-black';
+    src: url('fonts/fengardo_neue/web/fengardoneue_black-webfont.eot');
+    src: url('fonts/fengardo_neue/web/fengardoneue_black-webfont.woff');
+    src: url('fonts/fengardo_neue/web/fengardoneue_black-webfont.svg');
+    src: url('fonts/fengardo_neue/web/fengardoneue_black-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fengardo-neue-regular';
+    src: url('fonts/fengardo_neue/web/fengardoneue_regular-webfont.eot');
+    src: url('fonts/fengardo_neue/web/fengardoneue_regular-webfont.svg');
+    src: url('fonts/fengardo_neue/web/fengardoneue_regular-webfont.ttf');
+    src: url('fonts/fengardo_neue/web/fengardoneue_regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.grid-container-alea-affiches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container-alea-affiches {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+
+
+/* PARAMÈTRES GÉNÉRAUX */
+img {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'fengardo-neue-black';
+    font-size: 45px;
+    color:hotpink;
+    margin-bottom: 10px;
+    line-height: 1;
+    max-width: 17em;
+}
+
+body {
+    padding: 15px;
+    max-width: auto;
+}
+
+p {
+    font-family: 'fengardo-neue-regular';
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.2;
+    color: black;
+    max-width: 25em;
+}
+
+a {
+    font-family: 'fengardo-neue-black';
+    text-decoration: none;
+    color:hotpink;
+    font-size: 20px;
+
+}
+
+div a {
+    display: inline;
+    margin-right: 20px; 
+    font-size: 30px;/* Ajoute un espacement entre les liens si nécessaire */
+  }
+  
+
+a:hover {
+    opacity: 0.5;
+    transition: 0.8s;
+}
