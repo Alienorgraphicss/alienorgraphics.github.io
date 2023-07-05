@@ -21,6 +21,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     grid-auto-flow: row column;
+    margin-top: 10px;
   }
   
   @media (max-width: 768px) {
@@ -194,6 +195,12 @@ text-align: center;
     text-align: center;
     }  
 /* PARAMÈTRES GÉNÉRAUX */
+#logo-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  
 img {
     max-width: 100%;
     height: auto;
