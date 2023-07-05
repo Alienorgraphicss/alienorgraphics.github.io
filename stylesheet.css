@@ -159,7 +159,7 @@ text-align: center;
     text-align: center;
     }
 
-    /*grille recherches alea*/
+/*grille recherches alea*/
     .grid-container-alea-recherches {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
