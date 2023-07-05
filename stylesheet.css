@@ -205,11 +205,21 @@ text-align: center;
   
   .logo-container {
     display: flex;
-    align-items: center;
+    align-items:center;
   }
   
   .logo {
     width: 60px; /* Ajustez la taille du logo selon vos besoins */
+    margin-right: 10px; /* Ajoutez un espacement entre le logo et le texte */
+  }
+
+  .logo-container2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px; /* Ajustez la taille du logo selon vos besoins */
     margin-right: 10px; /* Ajoutez un espacement entre le logo et le texte */
   }
   
