@@ -194,6 +194,26 @@ text-align: center;
     .grid-item {
     text-align: center;
     }  
+
+/*grille carte graphique*/
+.grid-container-carte-graphique {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    }
+    
+    @media (max-width: 768px) {
+    .grid-container-carte-graphique {
+      grid-template-columns: 1fr;
+    }
+    }
+    
+    .grid-item {
+    text-align: center;
+    }  
 /* PARAMÈTRES GÉNÉRAUX */
 
 /*LOGO*/
