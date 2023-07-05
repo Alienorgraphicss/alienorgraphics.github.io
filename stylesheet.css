@@ -195,11 +195,23 @@ text-align: center;
     text-align: center;
     }  
 /* PARAMÈTRES GÉNÉRAUX */
+
+/*LOGO*/
+
 #logo-icon {
     width: 16px;
     height: 16px;
   }
   
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px; /* Ajustez la taille du logo selon vos besoins */
+    margin-right: 10px; /* Ajoutez un espacement entre le logo et le texte */
+  }
   
 img {
     max-width: 100%;
