@@ -198,7 +198,7 @@ text-align: center;
 /*grille carte graphique*/
 .grid-container-carte-graphique {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-top: 15px;
     grid-column-gap: 15px;
