@@ -341,21 +341,82 @@ text-align: center;
   right: 80px;
 }
 
-@media screen and (max-width: 768px) {
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 487px) { /*iphones 6-7-8*/
+    .slide img {
+      max-width: 100%;
+      height: auto;
+    }
+    
     .prev-btn,
     .next-btn {
-      width: 60px;
-      height: 60px;
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+    }
+
+    .prev-btn{
+        left: 20px;
+    }
+    .next-btn{
+        right: 20px;
+    }
+  }
+  /*Iphone X*/
+  @media screen and (max-width: 375px) {
+    .slide img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .prev-btn,
+    .next-btn {
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+      top: 320px;
+    }
+
+    .prev-btn{
+        left: 20px;
+    }
+    .next-btn{
+        right: 20px;
     }
   }
   
-  @media screen and (max-width: 480px) {
+  /* Styles pour les écrans de taille moyenne */
+  @media screen and (max-width: 768px) {
+    .slide img {
+      max-width: 80%;
+      height: auto;
+    }
+    
     .prev-btn,
     .next-btn {
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
+      font-size: 24px;
     }
   }
+  
+  /* Styles pour les écrans de grande taille */
+  @media screen and (min-width: 1024px) {
+    .slide img {
+      max-width: 60%;
+      height: auto;
+    }
+    
+    .prev-btn,
+    .next-btn {
+      width: 150px;
+      height: 150px;
+      font-size: 28px;
+    }
+  }
+  
+
+
   
 /* PARAMÈTRES GÉNÉRAUX */
 
