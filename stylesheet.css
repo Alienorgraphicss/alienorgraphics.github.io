@@ -266,7 +266,25 @@ text-align: center;
     
     .grid-item {
     text-align: center;
-    } 
+    }
+
+/*grille gibbons*/
+.grid-container-gibbons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+    }
+    
+    @media (max-width: 768px) {
+    .grid-container-gibbons {
+      grid-template-columns: 1fr;
+    }
+    }
+    
+    .grid-item {
+    text-align: center;
+    }
 /* PARAMÈTRES GÉNÉRAUX */
 
 /*LOGO*/
