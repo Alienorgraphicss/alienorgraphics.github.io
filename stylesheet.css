@@ -186,7 +186,7 @@ text-align: center;
     }
     
     @media (max-width: 768px) {
-    .grid-container-alea-recode {
+    .grid-container-recode {
       grid-template-columns: 1fr;
     }
     }
@@ -226,6 +226,23 @@ text-align: center;
     
     @media (max-width: 768px) {
     .grid-container-edv {
+      grid-template-columns: 1fr;
+    }
+    }
+    
+    .grid-item {
+    text-align: center;
+    }  
+/*grille ciel étoilé*/
+.grid-container-ciel-etoile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 15px;
+    }
+    
+    @media (max-width: 768px) {
+    .grid-container-ciel-etoile {
       grid-template-columns: 1fr;
     }
     }
