@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo-sitev2.png" type="logo" id="logo-icon">
     <link rel="shortcut icon" href="images/logo-sitev2.png" type="logo">
-    <script src="script.js"></script>
    <title>Photos Venise</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <a href="index.html">
@@ -27,9 +34,115 @@
           <img src="images/photos-venise/venise-2.jpg" alt="Image 2">
         </div>
         <div class="slide">
-          <img src="images/photos-venise/venise-3.jpg" alt="Image 3">
-        </div>
+            <img src="images/photos-venise/venise-3.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-4.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-5.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-6.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-7.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-8.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-9.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-10.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-11.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-12.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-13.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-14.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-15.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-16.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-17.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-18.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-19.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-20.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-21.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-22.jpg" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-23.jpg" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/photos-venise/venise-24.jpg" alt="Image 2">
+          </div>
+        <!-- Ajoutez les autres diapositives ici -->
       </div>
       
+      <button class="prev-btn">&#8249;</button>
+      <button class="next-btn">&#8250;</button>
+      
+      <script>
+        const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+function prevSlide() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+  showSlide(currentIndex);
+}
+
+function nextSlide() {
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  showSlide(currentIndex);
+}
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+// Afficher la première diapositive au chargement de la page
+showSlide(currentIndex);
+
+      </script>
 </body>
 </html>
