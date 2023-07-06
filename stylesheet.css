@@ -285,6 +285,26 @@ text-align: center;
     .grid-item {
     text-align: center;
     }
+/*Venise*/
+.slideshow-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
 /* PARAMÈTRES GÉNÉRAUX */
 
 /*LOGO*/
