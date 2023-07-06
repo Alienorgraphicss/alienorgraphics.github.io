@@ -440,8 +440,6 @@ text-align: center;
   }
   
 
-
-  
 /* PARAMÈTRES GÉNÉRAUX */
 
 /*LOGO*/
@@ -451,23 +449,24 @@ text-align: center;
     height: 16px;
   }
   
-  .logo-container {
+.logo-container {
     display: flex;
     align-items:center;
   }
   
   .logo {
-    width: 60px; /* Ajustez la taille du logo selon vos besoins */
-    margin-right: 10px; /* Ajoutez un espacement entre le logo et le texte */
+    width:300px; /* Ajustez la taille selon vos besoins */
+    height:auto;
+    margin: 0px;
   }
-
+    
   .logo-container2 {
     display: flex;
     align-items: center;
   }
   
-  .logo {
-    width: 80px; /* Ajustez la taille du logo selon vos besoins */
+  .logo-index {
+    width: 100px; /* Ajustez la taille du logo selon vos besoins */
     margin-right: 10px; /* Ajoutez un espacement entre le logo et le texte */
   }
   
@@ -518,4 +517,8 @@ div a {
 a:hover {
     opacity: 0.5;
     transition: 0.8s;
+}
+
+h5{
+    top:10px;
 }
